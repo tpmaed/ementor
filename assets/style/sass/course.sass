@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap')
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+a
+    text-decoration: none
+
+button, input 
+    outline: none
+    background: none
+    border: none
+
+@mixin text()
+    font-family: 'Raleway'
+    font-style: normal
+    font-weight: 500
+    font-size: 16px
+    line-height: 100%
+    color: #FDFDFD
+
+@mixin teacher()
+    font-family: 'Raleway'
+    font-style: normal
+    font-weight: 400
+    font-size: 14px
+    line-height: 130%
+    color: #353A5A
+
+@mixin footer()
+    font-family: 'Raleway'
+    font-style: normal
+    font-weight: 400
+    font-size: 16px
+    line-height: 100%
+    color: #353A5A
+
+.section-1
+    width: 100%
+    height: 100%
+    background-size: cover
+    background-position: center
+    header
+        width: 1170px
+        height: 88px
+        padding-top: 40px
+        margin: 0 auto
+        display: flex
+        flex-direction: column
+        .nav
+            width: 1170px
+            height: 24px
+            display: flex
+            justify-content: space-between
+            img
+                width: 128px
+                height: 16px
+            .nav1
+                width: 650px
+                height: 16px
+                display: flex
+                justify-content: space-between
+                a
+                    @include text()
+                    color: #353A5A
+                    position: relative
+                a:after
+                    content: ""
+                    display: block
+                    width: 100%
+                    height: 3px
+                    background-color: #FA9F42
+                    position: absolute
+                    display: none
+                a:hover 
+                    color: #FA9F42
+                a:hover:after
+                    display: block
+        .nav2
+            width: 256px
+            height: 14px
+            margin-top: 50px
+            display: flex
+            justify-content: space-between
+            a
+                @include teacher()
+                line-height: 100%
+            a:nth-child(5)
+                font-family: 'Raleway'
+                font-style: normal
+                font-weight: 400
+                font-size: 14px
+                line-height: 100%
+                color: #353A5A
+                opacity: 0.5
+    .container_1
+        width: 1170px
+        height: 1176px
+        margin: 60px auto
+        margin-bottom: 120px
+        .content_1
+            width: 1170px
+            height: 989px
+            margin-bottom: 80px
+            h1
+                @include text()
+                line-height: 120%
+                font-size: 58px
+                color: #353A5A
+                margin-bottom: 40px
+            img
+                margin-bottom: 40px
+            h2
+                @include text()
+                line-height: 130%
+                font-size: 22px
+                color: #353A5A
+                margin-bottom: 25px
+            p
+                font-family: 'Raleway'
+                font-style: normal
+                font-weight: 400
+                font-size: 16px
+                line-height: 150%
+                color: #353A5A
+        .content_2
+            width: 1170px
+            height: 107px
+            margin: 0 auto
+            display: flex
+            flex-direction: row
+            text-align: center
+            justify-content: space-between
+            .number
+                width: 270px
+                height: 107px
+                h2
+                    font-family: 'Raleway'
+                    font-style: normal
+                    font-weight: 500
+                    font-size: 58px
+                    line-height: 100%
+                    text-align: center
+                    font-feature-settings: 'pnum' on, 'lnum' on
+                    color: #10B582
+                    p
+                        @include teacher()
+                        font-size: 14px
+                        line-height: 120%
+.section-2
+    width: 100%
+    height: 556px
+    background-color: #10B582
+    padding-top: 120px 
+    .container_2
+        width: 1170px
+        height: 316px
+        margin: 0 auto
+        display: flex
+        justify-content: space-between
+        .page2_text
+            width: 540px
+            height: 316px
+            justify-content: flex-start
+            h1
+                @include text()
+                line-height: 120%
+                font-size: 58px
+                margin-bottom: 20px
+            p
+                font-family: 'Raleway'
+                font-style: normal
+                font-weight: 400
+                font-size: 16px
+                line-height: 150%
+                color: #FDFDFD
+                margin-bottom: 50px
+            .page3_text_link
+                width: 230px
+                height: 56px
+                background: #FA9F42
+                border-radius: 0px 20px
+                text-align: center
+                a
+                    font-family: 'Raleway'
+                    font-style: normal
+                    font-weight: 500
+                    font-size: 16px
+                    line-height: 310%
+                    text-align: center
+                    color: #FDFDFD
+.section-3
+    width: 100%
+    height: 500px
+    .container_3
+        width: 1170px
+        height: 369px
+        margin: 120px auto
+        display: flex
+        flex-direction: column
+        align-items: center
+        h1
+            font-family: 'Raleway'
+            font-style: normal
+            font-weight: 500
+            font-size: 58px
+            line-height: 100%
+            text-align: center
+            font-feature-settings: 'pnum' on, 'lnum' on
+            color: #353A5A
+        .course
+            width: 1170px
+            height: 135px
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            margin-top: 60px
+            margin-bottom: 60px
+            .course_list
+                width: 270px
+                height: 135px
+                background: #FDFDFD
+                box-shadow: 5px 5px 30px rgba(101, 101, 101, 0.12)
+                border-radius: 10px
+                padding-left: 15px
+                .title
+                    width: 205px
+                    height: 16px
+                    display: flex
+                    margin-bottom: 15px
+                    margin-top: 25px
+                    h3
+                        @include text()
+                        color: #353A5A
+                        margin-left: 8px
+                p
+                    font-family: 'Raleway'
+                    font-style: normal
+                    font-weight: 400
+                    font-size: 14px
+                    line-height: 130%
+                    font-feature-settings: 'pnum' on, 'lnum' on
+                    color: #353A5A
+                    text-align: start
+        .allcourses
+            width: 230px
+            height: 56px
+            background: #10B582
+            border-radius: 0px 20px
+            text-align: center
+            a
+                font-family: 'Raleway'
+                font-style: normal
+                font-weight: 500
+                font-size: 16px
+                line-height: 310%
+                text-align: center
+                color: #FDFDFD  
+.section-4
+    width: 100%
+    height: 81vh
+    background-image: url(../../img/section4.png)
+    background-position: center
+    background-size: cover
+    .container_4
+        width: 444px
+        height: 338px
+        margin: auto 50%
+        padding-top: 120px
+        h1
+            @include text()
+            line-height: 120%
+            font-size: 58px
+            color: #353A5A
+            margin-bottom: 20px
+        p
+            font-family: 'Raleway'
+            font-style: normal
+            font-weight: 400
+            font-size: 16px
+            line-height: 150%
+            font-feature-settings: 'pnum' on, 'lnum' on
+            color: #353A5A
+            margin-bottom: 50px
+        .page5_link
+            width: 230px
+            height: 56px
+            background: #FA9F42
+            border-radius: 0px 20px
+            text-align: center
+            a
+                font-family: 'Raleway'
+                font-style: normal
+                font-weight: 500
+                font-size: 16px
+                line-height: 315%
+                text-align: center
+                color: #FDFDFD
+.section-5
+    width: 100%
+    height: 870px
+    .container_5
+        width: 830px
+        height: 881px
+        margin: 120px auto
+        h1
+            @include text()
+            line-height: 120%
+            font-size: 58px
+            color: #353A5A
+            margin-bottom: 60px
+        .questionbox0
+            width: 830px
+            height: 167px
+            background: #FDFDFD;
+            box-shadow: 5px 5px 30px rgba(101, 101, 101, 0.12)
+            border-radius: 10px
+            border: solid red
+        .questionbox2
+            width: 830px
+            height: 89px
+            background: #FDFDFD
+            box-shadow: 5px 5px 30px rgba(101, 101, 101, 0.12)
+            border-radius: 10px
+            padding-top: 30px
+            padding-left: 30px
+            margin-bottom: 30px
+            .minititle
+                width: 770px
+                height: 30px
+                display: flex
+                justify-content: space-between
+                h2
+                    @include text()
+                    font-size: 22px
+                    line-height: 130%
+                    color: #353A5A
+footer
+    width: 100%
+    height: 345px
+    .container_footer
+        width: 1170px
+        height: 265px
+        margin: 120px auto
+        display: flex
+        flex-wrap: wrap
+        .line_foot
+            width: 1440px
+            height: 0px
+            opacity: 0.1
+            border: 1px solid #353A5A
+            margin-bottom: 80px
+        .footercolumn1
+            width: 270px
+            height: 172px
+            .footerlogo
+                width: 270px
+                height: 103px
+                margin-bottom: 47px
+                p
+                    font-family: 'Raleway'
+                    font-style: normal
+                    font-weight: 400
+                    font-size: 14px
+                    line-height: 130%
+                    color: #353A5A
+                    margin-top: 27px
+            .footersocial
+                width: 116px
+                height: 22px
+                display: flex
+                justify-content: space-between
+        .footercolumn
+            display: flex
+            flex-direction: column
+            margin: 0 auto
+            margin-bottom: 49px
+            h4
+                @include footer()
+                font-weight: 500
+                margin-bottom: 11px
+            a
+                @include footer()
+                margin-top: 20px
+            p
+                @include footer()
+        .footer_end
+            width: 1170px
+            height: 14px
+            display: flex
+            justify-content: space-between
+            margin-top: -50px
+            padding-bottom: 40px
+            p
+                @include teacher()
+                line-height: 100%
+                margin-right: 463px
+            a
+                @include teacher()
+                line-height: 100%
+
+
+
+
+
